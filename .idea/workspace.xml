@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfb00d56-d2be-4a97-808f-a8674ceeb885" name="Changes" comment="updated commit AuthorizationServerConfig by engr ipaye">
-      <change afterPath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/TokenCustomizerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/org/engripaye/resourceserver/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/org/engripaye/resourceserver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cfb00d56-d2be-4a97-808f-a8674ceeb885" name="Changes" comment="general correction and update on backend commit by engr. ipaye">
+      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authorization-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete-oauth2-iamsystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/complete-oauth2-iamsystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/UserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-server/src/main/java/org/engripaye/resourceserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/resource-server/src/main/java/org/engripaye/resourceserver/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -57,6 +53,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -115,7 +112,7 @@
       <updated>1752126573381</updated>
       <workItem from="1752126574528" duration="7987000" />
       <workItem from="1752135314372" duration="3654000" />
-      <workItem from="1752139213535" duration="1135000" />
+      <workItem from="1752139213535" duration="4901000" />
     </task>
     <task id="LOCAL-00001" summary="first commit by engr. ipaye">
       <option name="closed" value="true" />
@@ -141,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752133879584</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="general correction and update on backend commit by engr. ipaye">
+      <option name="closed" value="true" />
+      <created>1752140867793</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752140867793</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit by engr. ipaye" />
     <MESSAGE value="updated commit AuthorizationServerConfig by engr ipaye" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated commit AuthorizationServerConfig by engr ipaye" />
+    <MESSAGE value="general correction and update on backend commit by engr. ipaye" />
+    <option name="LAST_COMMIT_MESSAGE" value="general correction and update on backend commit by engr. ipaye" />
   </component>
 </project>

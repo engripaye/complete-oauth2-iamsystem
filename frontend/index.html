@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OAuth2 IAM Frontend</title>
+</head>
+<body>
+<h1>Login using Authorization Code Flow</h1>
+<a id="loginBtn" href="#">🔐 Login</a>
+<p id="token"></p>
+<p id="result"></p>
+
+<script>
+    const clientId = "frontend-client";
+    const clientSecret = "frontend-secret";
+    const redirectUri = "http://localhost:3000/callback";
+
+    const authUrl = new URL("http://localhost:8081/oauth2/authorize");
+    authUrl.searchParams.set("response_type", "code");
+    authUrl.searchParams.set("client_id", clientId);
+    authUrl.searchParams.set("redirect_uri", redirectUri);
+    authUrl.searchParams.set("scope", "read");
+
+    document.getElementById("loginBtn").href = authUrl.toString();
+
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+
+    if (code) {
+        fetch("http://localhost:8081/oauth2/token", {
+            method: "POST",
+            headers: {
+                "Authorization": "Basic " + btoa(clientId + ":" + clientSecret),
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: new URLSearchParams({
+                grant_type: "authorization_code",
+                code: code,
+                redirect_uri: redirectUri
+            })
+        })
+            .then(res => res.json())
+            .then(data => {
+                const token = data.access_token;
+                document.getElementById("token").textContent = "Access Token: " + token;
+
+                fetch("http://localhost:8082/user", {
+                    headers: {
+                        "Authorization": "Bearer " + token
+                    }
+                })
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("result").textContent = data;
+                    });
+            });
+    }
+</script>
+
+</body>
+</html>

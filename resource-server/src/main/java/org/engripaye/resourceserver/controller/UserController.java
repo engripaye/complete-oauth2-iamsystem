@@ -1,5 +1,7 @@
 package org.engripaye.resourceserver.controller;
 
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,12 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @GetMapping("/user")
-    public String helloUser(){
-         return "HELLO USER - You are authenticated!";
+    public String user(@AuthenticationPrincipal Jwt jwt) {
+        return "Welcome, " + jwt.getSubject();
     }
 
+
     @GetMapping("/admin")
-    public String helloAdmin() {
-        return "HELLO ADMIN - You are authenticated!";
+    public String admin(@AuthenticationPrincipal Jwt jwt) {
+        return "Welcome, " + jwt.getSubject();
     }
 }
