@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfb00d56-d2be-4a97-808f-a8674ceeb885" name="Changes" comment="first commit by engr. ipaye">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/UserConfig.java" afterDir="false" />
+    <list default="true" id="cfb00d56-d2be-4a97-808f-a8674ceeb885" name="Changes" comment="updated commit AuthorizationServerConfig by engr ipaye">
+      <change afterPath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/TokenCustomizerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/org/engripaye/resourceserver/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-server/src/main/java/org/engripaye/resourceserver/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authorization-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/authorization-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization-service/src/main/java/org/engripaye/authorizationservice/config/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete-oauth2-iamsystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/complete-oauth2-iamsystem.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +31,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;minikube&quot;,
+      &quot;originalNamespace&quot;: &quot;default&quot;
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="minikube" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2zfeUgFe9YRQkfpXpbjvCg6Ik3l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,6 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AuthorizationServiceApplication.executor": "Run",
+    "Spring Boot.ResourceServerApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
@@ -61,10 +74,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "http.proxy",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ResourceServerApplication">
     <configuration name="AuthorizationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="authorization-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.engripaye.authorizationservice.AuthorizationServiceApplication" />
@@ -72,6 +86,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ResourceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="resource-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.engripaye.resourceserver.ResourceServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.engripaye.resourceserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ResourceServerApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,7 +113,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752126573381</updated>
-      <workItem from="1752126574528" duration="6185000" />
+      <workItem from="1752126574528" duration="7987000" />
+      <workItem from="1752135314372" duration="3654000" />
+      <workItem from="1752139213535" duration="1135000" />
     </task>
     <task id="LOCAL-00001" summary="first commit by engr. ipaye">
       <option name="closed" value="true" />
@@ -99,14 +133,34 @@
       <option name="project" value="LOCAL" />
       <updated>1752127110824</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated commit AuthorizationServerConfig by engr ipaye">
+      <option name="closed" value="true" />
+      <created>1752133879584</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752133879584</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit by engr. ipaye" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit by engr. ipaye" />
+    <MESSAGE value="updated commit AuthorizationServerConfig by engr ipaye" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated commit AuthorizationServerConfig by engr ipaye" />
   </component>
 </project>
